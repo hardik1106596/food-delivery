@@ -1,0 +1,125 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #fff;
+}
+
+/* logo */
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff5a1f;
+}
+
+/* center menu */
+.menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.menu li {
+  cursor: pointer;
+}
+
+/* right section */
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.signin {
+  padding: 6px 12px;
+  border: 1px solid #000;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.signin:hover {
+  background-color: bisque;
+}
+
+.navbar .active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #49557e;
+
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.navbar li{
+  cursor: pointer;
+}
+
+.search-icon,
+.cart-icon {
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  display: inline-block;
+}
+
+.search-icon:hover,
+.cart-icon:hover {
+  transform: scale(1.2);
+}
+
+
+/* .dot {
+  width: 8px;
+  height: 8px;
+  background: red;
+  border-radius: 50%;
+  position: relative;
+  top: -10px;
+  left: -10px;
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: -2px;
+  right: -2px
+} */
+
+.navbar-search-icon .dot{
+  position:absolute;
+  min-width: 10px;
+  min-height: 10px;
+  background-color:  red;
+  border-radius: 50%;
+  top: -8px;
+  right: -8px;
+}
+
+.dot {
+  position: relative;
+  display: inline-block;
+}
+
+/* .red-dot {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  border-radius: 50%;
+} */
+
