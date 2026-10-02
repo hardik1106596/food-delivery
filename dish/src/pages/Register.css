@@ -1,0 +1,197 @@
+.register-page {
+  min-height: 100vh;
+  background: #f3eee3;
+  padding: 28px;
+  box-sizing: border-box;
+  color: #292a22;
+}
+
+.register-back {
+  display: inline-block;
+  margin: 4px 0 24px;
+  color: #4e5e48;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.register-shell {
+  width: min(1080px, 100%);
+  min-height: 680px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+
+  background: #fffdf8;
+  border: 1px solid #ddd5c7;
+}
+
+.register-image {
+  min-height: 680px;
+
+  display: flex;
+  align-items: flex-end;
+
+  padding: 45px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(35, 66, 43, 0.05),
+      rgba(35, 66, 43, 0.75)
+    ),
+    url("https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1000&q=85")
+    center / cover;
+
+  color: white;
+}
+
+.register-image span {
+  font-family: Georgia, serif;
+  font-size: clamp(36px, 4vw, 56px);
+  line-height: 0.98;
+}
+
+.register-form-wrap {
+  padding: 55px 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register-wordmark {
+  color: #315b3d;
+  text-decoration: none;
+  font-family: Georgia, serif;
+  font-size: 25px;
+  margin-bottom: 45px;
+}
+
+.section-eyebrow {
+  color: #6d8a62;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 10px;
+  margin-bottom: 12px;
+}
+
+.register-form-wrap h1 {
+  margin: 0 0 12px;
+
+  font-family: Georgia, serif;
+  font-size: clamp(38px, 4vw, 52px);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.register-form-wrap > p {
+  max-width: 420px;
+  color: #77756c;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0 0 30px;
+}
+
+.register-form-wrap form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 18px;
+}
+
+.register-form-wrap label {
+  margin-bottom: 7px;
+  font-size: 12px;
+  color: #4c4d45;
+}
+
+.register-form-wrap input {
+  width: 100%;
+  box-sizing: border-box;
+
+  border: none;
+  border-bottom: 1px solid #cfc8bb;
+
+  background: transparent;
+
+  padding: 11px 2px;
+  margin-bottom: 22px;
+
+  outline: none;
+
+  font-size: 14px;
+  color: #292a22;
+}
+
+.register-form-wrap input:focus {
+  border-bottom-color: #315b3d;
+}
+
+.register-form-wrap form button {
+  grid-column: 1 / -1;
+
+  margin-top: 5px;
+
+  border: none;
+  background: #315b3d;
+  color: white;
+
+  padding: 15px 20px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.register-form-wrap form button:hover {
+  background: #254a31;
+}
+
+.register-note {
+  margin-top: 24px;
+
+  text-align: center;
+
+  color: #77756c;
+  font-size: 13px;
+}
+
+.register-note a {
+  color: #315b3d;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+
+  .register-page {
+    padding: 15px;
+  }
+
+  .register-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .register-image {
+    min-height: 280px;
+  }
+
+  .register-form-wrap {
+    padding: 40px 28px;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .register-form-wrap form {
+    grid-template-columns: 1fr;
+  }
+
+  .register-form-wrap form button {
+    grid-column: auto;
+  }
+
+}

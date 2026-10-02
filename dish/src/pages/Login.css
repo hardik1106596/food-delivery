@@ -1,0 +1,169 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background: #f1ece3;
+}
+
+.login-back {
+  width: min(980px, 100%);
+  margin-bottom: 17px;
+  color: var(--muted);
+  font-size: 11px;
+  text-decoration: none;
+}
+
+.login-shell {
+  width: min(980px, 100%);
+  min-height: 590px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  background: var(--paper);
+  box-shadow: 0 24px 70px rgba(48, 39, 27, 0.11);
+}
+
+.login-image {
+  position: relative;
+  min-height: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: 35px;
+  background: url('https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1000&q=85') center / cover;
+}
+
+.login-image::after {
+  position: absolute;
+  inset: 0;
+  content: '';
+  background: linear-gradient(0deg, rgba(27, 34, 23, 0.56), transparent 60%);
+}
+
+.login-image span {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-family: var(--serif);
+  font-size: 38px;
+  line-height: 1.06;
+}
+
+.login-form-wrap {
+  align-self: center;
+  padding: 55px clamp(35px, 6vw, 75px);
+}
+
+.login-wordmark {
+  display: block;
+  margin-bottom: 56px;
+  color: var(--green);
+  font-family: var(--serif);
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.login-form-wrap .section-eyebrow {
+  margin-bottom: 9px;
+}
+
+.login-form-wrap h1 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 43px;
+  font-weight: 500;
+}
+
+.login-form-wrap>p {
+  max-width: 330px;
+  margin: 12px 0 27px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.login-form-wrap form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form-wrap label {
+  margin: 0 0 7px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.login-form-wrap input {
+  width: 100%;
+  height: 44px;
+  margin-bottom: 18px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  outline-color: var(--green);
+  background: #fff;
+  color: var(--ink);
+  font-size: 12px;
+}
+
+.login-form-wrap input::placeholder {
+  color: #aaa195;
+}
+
+.login-form-wrap form button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3px;
+  padding: 14px 16px;
+  border: 0;
+  background: var(--green);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.login-form-wrap form button span {
+  font-size: 17px;
+}
+
+.login-note {
+  margin-top: 21px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.login-note a {
+  color: var(--green);
+  font-weight: 600;
+}
+
+@media (max-width: 680px) {
+  .login-page {
+    justify-content: flex-start;
+    padding: 18px;
+  }
+
+  .login-shell {
+    min-height: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .login-image {
+    min-height: 210px;
+    padding: 20px;
+  }
+
+  .login-image span {
+    font-size: 30px;
+  }
+
+  .login-form-wrap {
+    padding: 32px 26px 36px;
+  }
+
+  .login-wordmark {
+    margin-bottom: 32px;
+  }
+}
